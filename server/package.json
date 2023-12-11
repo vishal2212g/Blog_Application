@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
-   
+    "start": "node index.js",
+    "client": "cd server/cd client; npm start",
+    "server": "cd server; npm start"
   },
   "author": "vishal",
   "license": "ISC",
