@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
-   
+    "start": "node index.js",
+   "client-install": "cd client && npm start",
+   "client-build": "cd client && npm run build"
   },
   "author": "vishal",
   "license": "ISC",
