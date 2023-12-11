@@ -27,13 +27,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use('/', Router);
 
 
-// app.use(express.static(path.join(_dirname,"./client/build")));
 
-// app.get('*', function(_, res){
-// res.sendFile(path.join(_dirname, "./client/build/index.html"),function(err){
-//     res.status(500).send(err);
-// })
-// })
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get('*', function(_, res){
@@ -43,10 +37,11 @@ app.get('*', function(_, res){
     }
   });
 });
-// if (process.env.NODE_ENV === 'production'){
-//     app.use(express.static("client/build"));
-// }
-
+//
+if (process.env.NODE_ENV === 'production'){
+    app.use(express.static("client/build"));
+}
+//
 const PORT = process.env.PORT || 8000;
 
 app.listen (PORT,()=> console.log(`server is runnig sussecfully on PORT 
