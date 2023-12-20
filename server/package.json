@@ -27,5 +27,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "repository": {
+            "type": "git",
+         "url": "git+https://github.com/vishal2212g/Blog_Application.git"
+        }
 }
