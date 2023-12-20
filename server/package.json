@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+   
    "client-install": "cd client && npm run client-install",
-   "client-build": "cd client && npm run client-build"
+   "client-build": "cd client && npm run client-build",
+
+   "start": "node index.js"
   },
   "author": "vishal",
   "license": "ISC",
